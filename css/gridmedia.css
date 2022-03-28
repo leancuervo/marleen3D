@@ -1,0 +1,52 @@
+@media screen and (max-width: 600px) {
+   
+   .contenedor__ppl{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header"
+	"card "
+	"impresion"
+	"contacto"
+	"footer";
+	}
+}
+
+
+
+
+#mainMenu{
+	grid-area: header;
+	display:flex ;
+}
+
+
+
+.contenedor_micuenta{
+	height: 100vh;
+	margin: 0%;
+	display: grid;
+	grid-gap: 0.5em;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: 
+	"header"
+	"micuenta"
+	"footer"
+
+}
+
+.menu{
+	grid-area: header;
+}
+
+.micuenta{
+	grid-area: micuenta;
+}
+
+.footer{
+
+grid-area: footer;
+}
